@@ -4,9 +4,16 @@
 
 }
 
-#comment {
-  height: 100px;
+#comment-preview {
+  min-height: 100px;
   width: 100vw;
-  background-color: lightblue;
-  
+}
+
+.large {font-size: 26px;
+}
+
+.medium {font-size:22px;
+}
+
+.small{font-size: 12px;
 }
