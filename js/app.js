@@ -20,14 +20,14 @@ $(document).ready(function() {
 
   //funcion que da estilos segun el boton seleccionado
   $changeSizeLarge.on("click", function() {
-  	       $("#comment-preview").addClass("large");
+  	       $("#comment-preview").css("fontSize","33px");
   });
 
   $changeSizeMedium.on("click", function() {
-        	  $("#comment-preview").addClass("medium");
+        	  $("#comment-preview").css("fontSize","28px");
   });
 
   $changeSizeSmall.on("click", function() {
-        	  $("#comment-preview").addClass("small");
+        	  $("#comment-preview").css("fontSize","23px");
   });
 });

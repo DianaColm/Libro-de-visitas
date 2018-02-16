@@ -23,6 +23,7 @@ function drawComment(data) {
     var sectionDom = createDomCommentFromData(commentsData[i]);
     commentsContainer.appendChild(sectionDom);
     }
+    console.log(commentsData);
 }
 
 function createDomCommentFromData(data) {
@@ -47,4 +48,5 @@ function addComment() {
   Object.assign(newComment.style, commentPreview.style);
   commentsData.unshift(newComment);
   drawComment();
+  console.log(commentPreview.style);
 }
