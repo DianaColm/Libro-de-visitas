@@ -10,26 +10,26 @@
 </head>
 <body>
   <h2 class="text-center">Libro de visitas</h2>
-  <main class="container">
-    <h3>Comentarios pasados:</h3>
-    <section class="comment">Me gusta front-end development <3 </section>
+  <h3 class="text-center">Comentarios pasados:</h3>
+  <main class="container" id="comments-container">
+    <!--<section class="comment">Me gusta front-end development <3 </section>
       <hr>
     <section class="comment">Gracias por el contenido, es súper útil</section>
-      <hr>
+      <hr>-->
   </main>
   <main class="container">
-    <h2 class="text-center">Agregar nuevo comentario</h2>
+    <h2 class="text-center space-10px-top">Agregar nuevo comentario</h2>
       <div class="row">
         <div class="col-12 text-center">
           <div class="btn-group" role="group" aria-label="Basic example">
-          <button type="button" class="btn btn-light">Large</button>
-          <button type="button" class="btn btn-light">Medium</button>
-          <button type="button" class="btn btn-light">Small</button>
-          <button type="button" class="btn btn-light">Color de texto</button>
-          <button type="button" class="btn btn-light">Color de fondo</button>
-          <button type="button" class="btn btn-light">Izquierda</button>
-          <button type="button" class="btn btn-light">Centrar</button>
-          <button type="button" class="btn btn-light">Derecha</button>
+          <button type="button" id="change-size-large" class="btn btn-light">Large</button>
+          <button type="button" id="change-size-medium" class="btn btn-light">Medium</button>
+          <button type="button" id="change-size-small" class="btn btn-light">Small</button>
+          <button type="button" id="change-text-color" class="btn btn-light">Color de texto</button>
+          <button type="button" id="change-background-color" class="btn btn-light">Color de fondo</button>
+          <button type="button" id="change-align-left" class="btn btn-light">Izquierda</button>
+          <button type="button" id="change-align-middle" class="btn btn-light">Centrar</button>
+          <button type="button" id="change-align-right" class="btn btn-light">Derecha</button>
           </div>
         </div>
       </div>
@@ -38,7 +38,7 @@
         <div class="col-12">
           <form class="">
             <div class="form-group">
-              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Aqui comienza tu comentario"></textarea>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Aqui comienza tu comentario"></textarea> <!--comment-text-->
             </div>
           </form>
         </div>
@@ -46,25 +46,22 @@
       <div class="row">
         <div class="col">
           <h3 class="text-center" for="">Así se veria tu comentario:</h3>
-
+          <div id="comment-preview"></div>
         </div>
       </div>
-      <div class="row">
+      <!--<div class="row">
         <div class="col" id="comment">
-          <span>Aqui</span>
+          <span id="txtArea"></span>
         </div>
-      </div>
-      <br>
-      <div class="row">
-        <div class="col offset-5">
-          <button type="button" class="btn btn-primary">Enviar comentarios</button>
-        </div>
-      </div>
+      </div>-->
+
+      <div class="text-center space-10px-top"><button id="send-button" class="btn btn-primary">Enviar comentarios</button></div>
   </main>
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <script type="text/javascript" src="js/app.js"></script>
+<script type="text/javascript" src="js/crud-comments.js"></script>
 
 </body>
 </html>
